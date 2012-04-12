@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: DataAggregator3
+Bundle-SymbolicName: DataAggregator3
+Bundle-Version: 1.0.0.qualifier
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Service-Component: OSGI-INF/aggregator-description.xml
+Export-Package: arch.dataaggregator3
+Import-Package: arch.dataaggregatorinterface,
+ arch.datasourceinterface,
+ org.osgi.framework;version="1.3.0"

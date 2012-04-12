@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="Data Source 1">
+  <implementation class="arch.datasource1.RegisterComponent"/>
+  <reference bind="setDataSourceService" interface="arch.datasourceinterface.IDataSourceService" name="dataSourceService" unbind="unsetDataSourceService"/>
+</scr:component>

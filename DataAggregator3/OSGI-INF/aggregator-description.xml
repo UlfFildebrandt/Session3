@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="Data Aggregator 3 Impl">
+  <implementation class="arch.dataaggregator3.SumDataAggregator"/>
+  <service>
+     <provide interface="arch.dataaggregatorinterface.IDataAggregator"/>
+  </service>
+</scr:component>

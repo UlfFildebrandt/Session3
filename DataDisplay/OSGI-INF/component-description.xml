@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" activate="activate" name="Servlet Registration">
+  <implementation class="arch.datadisplay.ui.RegisterComponent"/>
+  <reference name="httpService"
+    interface="org.osgi.service.http.HttpService"
+    bind="setHttpService"
+    unbind="unsetHttpService"
+    cardinality="1..1"
+    policy="static"/>
+  <reference bind="setServlet" cardinality="1..1" interface="arch.datadisplay.ui.DisplayServlet" name="DisplayServlet" policy="static" unbind="unsetServlet"/>
+  <reference name="aggregator"
+    interface="arch.dataaggregatorinterface.IDataAggregator"
+    bind="setAggregatorService"
+    unbind="unsetAggregatorService"
+    cardinality="0..n"
+    policy="dynamic"/>
+</scr:component>

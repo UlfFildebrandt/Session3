@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: DataSource2
+Bundle-SymbolicName: DataSource2
+Bundle-Version: 1.0.0.qualifier
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Service-Component: OSGI-INF/component-description.xml
+Export-Package: arch.datasource2
+Import-Package: arch.datasource2,
+ arch.datasourceinterface,
+ org.osgi.framework;version="1.3.0"
